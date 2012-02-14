@@ -6,7 +6,7 @@ body {
   background: #B8B8B8;
 }
 
-header, footer, aside, nav, article {  
+header, footer, aside, nav, article {
   display: block;
 }
 
@@ -23,8 +23,8 @@ nav {
   padding: 1em 0;
   background: #fff;
   margin-top: 2em;
-  /*position: absolute;*/  
-  /*left: 0;  */
+  /*position: absolute;*/
+  /*left: 0; */
   /*width: 100%;*/
 }
   
@@ -55,9 +55,9 @@ nav ul li a {
 }
   
 .round {
-  -moz-border-radius:    10px;
+  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius:         10px;
+  border-radius: 10px;
 }
 
 footer {
@@ -69,12 +69,11 @@ footer {
 footer nav {
   margin-top: 0em;
   float: none;
-  padding: 0.4em 0 0.4em 0; 
+  padding: 0.4em 0 0.4em 0;
 }
 
 footer nav ul li {
   float: none;
   /* display: inline-block; */
 }
-
 

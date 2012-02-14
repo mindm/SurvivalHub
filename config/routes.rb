@@ -3,6 +3,7 @@ SurvivalHub::Application.routes.draw do
   get "users/show"
   get "users/new"
   get "users/all"
+  get "users/signin"
   get "pages/home"
   get "pages/about"
   get "pages/contact"
