@@ -10,6 +10,8 @@ SurvivalHub::Application.routes.draw do
   match '/home', :to => 'pages#home'
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
+  match '/users', :to => 'users#all'
+  match '/signup', :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
