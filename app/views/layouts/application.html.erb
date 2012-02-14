@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SurvivalHub</title>
+  <title>SurvivalHub | <%= @title %></title>
+  <%= stylesheet_link_tag "blueprint/screen" %>
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <!--<%= javascript_include_tag "application" %>-->
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <header>
+    <%= image_tag("logo.png", :alt => "SurvivalHub", :class => "round") %>
+    <nav class="round">
+      <ul>
+        <li><%= link_to "Home", home_path %></li>
+        <li><%= link_to "Sign in", "#" %></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="content round">
+
+  <%= yield %>
+
+  </section>
+
+  <footer>
+    <nav class="round">
+      <ul>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+  
 </body>
 </html>
