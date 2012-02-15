@@ -1,4 +1,7 @@
 SurvivalHub::Application.routes.draw do
+  resources :users
+  resources :posts
+
   get "users/create"
   get "users/show"
   get "users/new"
@@ -11,8 +14,8 @@ SurvivalHub::Application.routes.draw do
   match '/home', :to => 'pages#home'
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
-  match '/users', :to => 'users#all'
   match '/signup', :to => 'users#new'
+  match '/allusers', :to => 'users#all'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
