@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
   
   before_save :encrypt_password
   
-  private
+  #private
   
     def encrypt_password
       self.encrypted_password = Digest::SHA2.hexdigest(password)
